@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Arial;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    width: 1000px;
+    margin-left: 150px;
+    position: center;
+}

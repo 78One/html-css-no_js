@@ -1,0 +1,73 @@
+.dota-attributes {
+    position:relative;
+    display: inline-block;
+    width: inherit;
+    background-color: rgb(0, 0, 0);
+}
+
+.dota-attributes__attribute {
+    position: absolute;
+    cursor: pointer;
+    color: #999999;
+    text-align: center;
+}
+
+.dota-attributes__img {
+    width: inherit;
+}
+.dota-attributes__attribute_one {
+    top: 100px;
+    left: 100px;
+}
+
+.dota-attributes__attribute_two {
+    top: 100px;
+    left: 455px;
+}
+
+.dota-attributes__attribute_three {
+    top: 100px;
+    left: 800px;
+}
+
+.dota-attributes__effect a {
+    padding: 10px;
+    color: #999999;
+    font-weight: 700;
+    text-shadow: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.dota-attributes__effect a::before,
+.dota-attributes__effect a::after {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-11px);
+    -moz-transform: translateY(-11px);
+    transform: translateY(-11px);
+}
+
+.dota-attributes__effect a:hover,
+.dota-attributes__effect a:focus {
+    color: #fff;
+}
+
+.dota-attributes__effect a:hover::before,
+.dota-attributes__effect a:focus::before,
+.dota-attributes__effect a:hover::after,
+.dota-attributes__effect a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    transform: translateY(1px);
+}
